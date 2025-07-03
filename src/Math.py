@@ -1,8 +1,7 @@
-def add(a: int, b: int) -> int:
-    return a + b
+from typing import Iterable
 
-def multiply(a: int, b: int) -> int:
-    return a * b
+def add(*args: int) -> int:
+    return sum(args)
 
-def addMany(*args: int) -> int:
-    pass
+def add_stream(numbers: Iterable[int]) -> int:
+    return sum(numbers)
